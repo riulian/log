@@ -1,0 +1,9 @@
+<%= stylesheet_link_tag    "application", :media => "all" %>
+<%= javascript_include_tag "application" %>
+
+<h1>Arata datele userului selectat in pagina index</h1>
+Nume: <%= @user.nume%></br>
+Email: <%= @user.email%></br>
+Id: <%= @user.id%></br>
+<td><%= link_to "Edit", {:controller => "users", :action => "edit", :users => @user.id }%></td>
+<td><%= link_to 'Back', users_index_path %></td>

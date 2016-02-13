@@ -1,0 +1,7 @@
+<h1>Inscrie un nou user</h1>
+<%= form_for User.new, url: {action: "create"} do |f| %>
+          <p>Nume: <br/><%= f.text_field :nume %></p>
+          <p>Email: <br/><%= f.text_field :email %></p>
+          <p><%= f.submit "Create new user"%></p>
+        <% end %>
+        <td><%= link_to 'Back', users_index_path %></td>

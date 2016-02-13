@@ -1,0 +1,10 @@
+
+
+<h1>Editeaza...</h1>
+<%= form_for @user, url: {action: "update"} do |f| %>
+          <p>Nume: <br/><%= f.text_field :nume %></p>
+          <p>Email: <br/><%= f.text_field :email %></p>
+          <p><%= f.submit "Updatee user" %></p>
+        <% end %>
+<td><%= link_to "Show", {:controller => "users", :action => "show", :users => @user.id }%></td>
+<td><%= link_to 'Back', users_index_path %></td>

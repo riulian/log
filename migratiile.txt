@@ -1,0 +1,4 @@
+rails g model User nume:string email:string pssword_digest:string remember_digest:string admin:boolean activation_digest:string activated:boolean activated_at:datetime reset_digest:string reset_sent_at:datetime
+
+rails g model micropost content:text picture:string user_id:integer
+

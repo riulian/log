@@ -1,0 +1,6 @@
+<h1>User-ul a fost creat cu succes!</h1>
+Nume: <%= @user.nume %> </br>
+Email: <%= @user.email %></br>
+Id: <%= @user.id %></br>
+<td><%= link_to "Edit", {:controller => "users", :action => "edit", :users => @user.id }%></td>
+<td><%= link_to 'Back', users_index_path %></td>
