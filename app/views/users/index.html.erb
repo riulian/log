@@ -18,7 +18,7 @@
         <td><%= f.email %></td>
         <td><%= link_to "Show", {:controller => "users", :action => "show", :users => f.id }%></td>
         <td><%= link_to "Edit", {:controller => "users", :action => "edit", :users => f.id }%></td>
-        <td><%= link_to "Delete", {:controller => "users", :action => "destroy",  :users => f.id }%></td>
+        <td><%= link_to "Delete", {:controller => "users", :action => "destroy",  :users => f.id }, data: {confirm: "Sigur stergi ?"}%></td>
         
      
       </tr>
